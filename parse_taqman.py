@@ -201,7 +201,7 @@ def assay_sort(setup):
     return [a[-1]+a[:-1] for a in assays]
 
 def main():
-    assert len(sys.argv) > 1, f"Usage: {sys.argv[0]} <input> [output]"
+    assert len(sys.argv) > 1, f"Usage: {sys.argv[0]} input [output]"
     infilename = sys.argv[1]
     outfilename = None
     if len(sys.argv) == 3:
